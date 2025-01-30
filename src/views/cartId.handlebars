@@ -1,0 +1,30 @@
+<div class="cart-container-renderCartId">
+    <h1 class="cart-title-renderCartId">Carrito #{{cartId}}</h1>
+
+    {{#if products.length}}
+    <table class="cart-table-renderCartId">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+            <tr class="cart-item-renderCartId" id="product-{{@index}}-renderCartId">
+                <td class="product-title-renderCartId">{{this.title}}</td>
+                <td class="product-price-renderCartId">${{this.price}}</td>
+                <td class="product-quantity-renderCartId">{{this.quantity}}</td>
+                <td class="product-subtotal-renderCartId">${{this.subtotal}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <p class="cart-total-renderCartId">Total: <span id="total-amount-renderCartId">${{totalAmount}}</span></p>
+    {{else}}
+    <p class="cart-empty-renderCartId">El carrito está vacío.</p>
+    {{/if}}
+</div>

@@ -23,7 +23,7 @@ router.get("/:cid", async (req, res) => {
         const getCart = await cartModel.findById(req.params.cid).populate('products.product').lean()
         res.send(getCart)
     } catch (error) {
-        res.status(500).send("no se pudo actualizar")
+        res.status(500).send("no se pudo encontrar")
     }
 })
 
