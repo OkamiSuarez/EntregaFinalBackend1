@@ -20,12 +20,9 @@ router.get("/", async (req, res) => {
             lean: true
         };
 
-        // Configurando los filtritos
-        if (sort) {
-            const [field, order] = sort.split(':');
-            if (['category', 'status', 'price'].includes(field) && ['asc', 'desc'].includes(order)) {
-                options.sort = { [field]: order === 'asc' ? 1 : -1 };
-            }
+        // Configurando el sort
+        if (sort === 'asc' || sort === 'desc') {
+            options.sort = { price: sort === 'asc' ? 1 : -1 };
         }
 
         // Filtro

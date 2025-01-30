@@ -36,7 +36,7 @@ app.use(express.static("./src/public"))
 
 // ruta base
 app.get('/',(req,res)=>{
-    res.send("Primer pre entrega coderhouse Okami Suarez")
+    res.send("Entrega final coderhouse Okami Suarez")
 })
 
 // Express handlebars
