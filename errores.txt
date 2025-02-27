@@ -6,3 +6,5 @@ tambien tengo que comentar la siguiente linea 35  en cart-manager.js por que no 
 // await fs.writeFile(this.path, JSON.stringify(this.carts,null,2))
 
 el  model no esta cargandole el carrito
+
+git no pushea la data
