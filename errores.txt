@@ -1,5 +1,6 @@
 aqui al hacer el login me da el siguiente error 
 "Cast to ObjectId failed for value "current" (type string) at path "_id" for model "products""
+y esto viene de product.router.js en la linea 75
 
 tambien tengo que comentar la siguiente linea 35  en cart-manager.js por que no corre el programa si lo dejo
 // await fs.writeFile(this.path, JSON.stringify(this.carts,null,2))
