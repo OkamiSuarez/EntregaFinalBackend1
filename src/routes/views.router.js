@@ -45,7 +45,7 @@ router.get("/cart/:cid", async(req,res)=>{
         res.render("cartId", { 
             cartId: cart._id,
             products: cartProducts,
-            totalAmount: totalAmount.toFixed(2) // Asegúrate de que esto esté presente
+            totalAmount: totalAmount.toFixed(2) 
         });
         } catch (error) {
             console.error("Error al obtener el carrito:", error);

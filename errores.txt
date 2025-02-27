@@ -1,0 +1,7 @@
+aqui al hacer el login me da el siguiente error 
+"Cast to ObjectId failed for value "current" (type string) at path "_id" for model "products""
+
+tambien tengo que comentar la siguiente linea 35  en cart-manager.js por que no corre el programa si lo dejo
+// await fs.writeFile(this.path, JSON.stringify(this.carts,null,2))
+
+el  model no esta cargandole el carrito 

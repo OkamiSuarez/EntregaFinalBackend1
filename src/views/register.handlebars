@@ -1,15 +1,24 @@
 <h2>Registro de usuario</h2>
 
 <form action="/api/sessions/register" method="POST">
-    <label for="">Nombre de usuario</label>
-    <input type="text" name="usuario">
+    <label for="usuario">Nombre de usuario</label>
+    <input type="text" name="usuario" required>
     <br><br>
 
-    <label for="">Contrasena:</label>
+    <label for="password">Contrasena:</label>
     <input type="password" name="password" required>
     <br><br>
 
     <button type="submit">Registrar</button>
 </form>
 
+{{!-- Falta  lo siguiente
+first_name:String,
+last_name:String,
+email:String (único)
+age:Number,
+password:String(Hash)
+cart:Id con referencia a Carts
+role:String(default:’user’)
+ --}}
 {{!-- HAY QUE HACER MAS COMPLEJO ESTO SEGUN LA PRE ENTREGA --}}

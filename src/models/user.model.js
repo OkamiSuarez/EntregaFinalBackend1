@@ -15,3 +15,13 @@ const usuarioSchema = new mongoose.Schema({
 const UsuarioModel = mongoose.model("usuarios",usuarioSchema)
 
 export default UsuarioModel
+
+// Falta
+/*  first_name:String,
+last_name:String,
+email:String (único)
+age:Number,
+password:String(Hash)
+cart:Id con referencia a Carts
+role:String(default:’user’)
+*/

@@ -32,7 +32,7 @@ class CartManager {
 
     // guardar carritos en el sistema va a crear el carro
     async guardarCarritos(){
-        await fs.writeFile(this.path, JSON.stringify(this.carts,null,2))
+        // await fs.writeFile(this.path, JSON.stringify(this.carts,null,2))
     }
 
     // Metodos de consigna
